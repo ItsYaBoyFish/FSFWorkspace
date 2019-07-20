@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightgrey;
+}
+
+img {
+  display: block;
+  float: left;
+  height: 200px;
+  width: 200px;
+  padding-right: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+h3 {
+  text-align: center;
+  
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contactUs {
+  padding-bottom: 10px;
+}
+.intro {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.project1 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  margin-top: 25px;
+}
+
+.project2 {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+.project3 {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+}
+.header {
+  background-color:#5e6073;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.info {
+  background-color: #89a3b2;
+  height: 200px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.grid {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nested {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: 200px;
+}
+
+.prjctinfo {
+  background-color: #89a3b2;
+  height: 200px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.prjctDesc {
+  padding-top: 17px;
+  font-size: 28px;
+}
+
+.prjctText {
+  font-size: 18px;
+}

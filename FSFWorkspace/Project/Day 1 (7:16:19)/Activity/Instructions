@@ -1,0 +1,18 @@
+Create the basic structure of an html page.
+
+  1 - DOCTYPE Declaration (DONE)
+  2 - Head tag with a title tag (DONE)
+  3 - H1 tag with a title of your choice (DONE)
+  4 - Embed an image (DONE)
+  5 - Create the following three links on the page (DONE)
+    -- One Link that has a target = "_blank" which opens the page on a new browser tab
+    -- Make the second Link Bold 
+    -- Make the third Link a placholder
+
+Bonus
+
+  1 - Create an ordered list of steps to make a sandwich. (DONE)
+  2 - Create an unordered list of 5 bands/musicians you like. (DONE)
+  3 - Create a table with 2 columns (animal class and animal name) and 4 rows of animals (DONE)
+  4 - Use an alternate way of seperating links without line breaks. (DONE)
+  5 - Embed a YouTube video of your favorite musician. (DONE)
