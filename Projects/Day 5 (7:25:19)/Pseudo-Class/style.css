@@ -1,0 +1,26 @@
+a {
+  font-size: 64px;
+}
+
+a:hover {
+  color: Black;
+}
+
+a:focus {
+  color: orange;
+}
+
+a:active {
+  color: blue;
+}
+
+.box {
+  height: 30px;
+  width: 30px;
+  background-color: lightgrey;
+  margin: 2em;
+}
+
+.box:nth-child(2) {
+  background: red;
+}
