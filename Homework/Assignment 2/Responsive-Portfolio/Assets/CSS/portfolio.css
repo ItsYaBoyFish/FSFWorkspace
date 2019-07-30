@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4aaaa5;
+  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url('../Images/textured_paper.png')
+}
+
+hr {
+  height: 2px;
+  background-color: #4aaaa5;
+  border: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  width: 600px;
+  height: 700px;
+  margin-bottom: 10em;
+}
+
+.header-title {
+  padding-top: 1.5em;
+  padding-left: 1em;
+  font-size: 33px;
+  margin-bottom: 0.2em;
+  letter-spacing: 1px;
+  color: #4aaaa5;
+}
+
+.portfolio {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+  background-color: lightgrey;
+  width: 90%;
+  position: relative;
+
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: #4aaaa5;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.box1 {
+  float: left;
+  margin-left: 3.5em;
+  background-image: url('../Images/hangman.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+.box2 {
+  float: left;
+  margin-left: 7em;
+  background-image: url('../Images/travel.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+.box3 {
+  clear:left;
+  float: left;
+  margin-left: 3.5em;
+  background-image: url('../Images/phone.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+.box4 {
+  float: left;
+  margin-left: 7em;
+  background-image: url('../Images/computer.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+.box5 {
+  clear: left;
+  float: left;
+  margin-left: 3.5em;
+  background-image: url('../Images/widget.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+.box6 {
+  float:left;
+  margin-left: 7em;
+  background-image: url('../Images/headphones.jpg');
+  background-size: 150px 150px;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.project-title {
+  z-index: 3;
+  background-color: #4aaaa5;
+  padding: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 5em;
+}
+
+.box5 .project-title {
+  font-size: 16px;
+}
