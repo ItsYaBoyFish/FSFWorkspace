@@ -15,3 +15,38 @@
   padding-top: 35px;
   color: #fff;
 }
+
+@media screen and (max-width: 980px) {
+  .footer {
+    height: 40px;
+  }
+
+  .footer-content {
+    padding: 0;
+    margin-top: 0.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 40px;
+  }
+
+  .footer-content {
+    margin-top: 0.8em;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    width: 100%;
+    position: unset;
+    margin-right: auto;
+    margin-left: auto;
+    height: 30px;
+  }
+  .footer-content {
+    margin-top: .5em;
+  }
+}
