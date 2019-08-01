@@ -87,6 +87,13 @@ img {
   }
 } 
 
+@media screen and (max-width: 890px) {
+  .content {
+    overflow: auto;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .content {
     width: 90%;
@@ -115,8 +122,8 @@ img {
   }
 
   img {
-   height: 550px;
-   width: 550px;
+   height: 90%;
+   width: 90%;
    margin-left: 1em;
   }
 
