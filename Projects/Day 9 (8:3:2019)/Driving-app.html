@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Car Instructions</h1>
+  <h4>Use "h" to Honk, use "d" to drive to work, use "t" to perform a tune up, and use "w" to drive around the world</h4>
+  <p id="user-text"></p>
+
+  <script>
+  let userText = document.getElementById('user-text');
+
+  document.onkeyup = function() {
+    let input = event.key;
+    input = input.toLowerCase();
+    console.log(input);
+
+    if (input === 'h') {
+      car.honk();
+    } else if (input === 'd') {
+      car.driveToWork();
+    } else if (input === 't') {
+      car.getTuneUp();
+    } else if (input === "w") {
+      car.driveAroundWorld();
+    }
+  }
+  var car = {
+  make: "Honda",
+  model: "Fit",
+  color: "Blue Raspberry",
+  mileage: 3000,
+  isWorking: true,
+
+
+  
+
+  driveToWork: function() {
+
+    alert("Old Mileage: " + this.mileage);
+
+    this.mileage = this.mileage + 8;
+
+    alert("New mileage: " + this.mileage);
+  },
+
+  driveAroundWorld: function() {
+
+    alert("Old Mileage: " + this.mileage);
+
+    this.mileage = this.mileage + 24000;
+
+    alert("New Mileage: " + this.mileage);
+    alert("Car needs a tuneup!");
+
+    this.isWorking = false;
+  },
+
+  getTuneUp: function() {
+    alert("Car is ready to go!");
+    this.isWorking = true;
+  },
+
+  honk: function() {
+    alert("Honk! Honk!");
+  }
+};
+</script>
+</body>
+</html>
+
+
