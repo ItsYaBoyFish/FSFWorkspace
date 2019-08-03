@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <script>
+
+      var car = {
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+
+        driveToWork: function() {
+
+          console.log("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 8;
+
+          console.log("New mileage: " + this.mileage);
+        },
+
+        driveAroundWorld: function() {
+
+          console.log("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 24000;
+
+          console.log("New Mileage: " + this.mileage);
+          console.log("Car needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          console.log("Car is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          console.log("Honk! Honk!");
+        }
+      };
+
+
+      console.log('---------------------------------');
+
+
+      // How would we log...
+
+      // The car's make?
+
+      console.log(car.make);
+
+      // The car's model?
+
+      console.log(car.model);
+      // The car's mileage?
+
+      console.log(car.mileage);
+      // How would we run the car's driveToWork method?
+
+      console.log(car.driveToWork());
+
+      // How would we run the car's driveAroundWorld method?
+
+      console.log(car.driveAroundWorld());
+
+      // How would we run the getTuneUp method?
+
+      console.log(car.getTuneUp());
+
+
+      var me = {
+        name: "Austin Graves",
+        age: 23,
+        "hair color": "brown",
+        height: "5'11"
+      }
+
+      // Logging my name
+      console.log(me.name);
+      // Loggin my age
+      console.log(me.age);
+      // Logging my hair color
+      console.log(me["hair color"]);
+      // Logging my height
+      console.log(me.height);
+    </script>
+    
+  </body>
+</html>
