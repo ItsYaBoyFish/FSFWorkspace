@@ -8,28 +8,41 @@
 </head>
 <body>
 
-  <h1>Car Instructions</h1>
+  <h1>Car Instructions:</h1>
   <h4>Use "h" to Honk, use "d" to drive to work, use "t" to perform a tune up, and use "w" to drive around the world</h4>
-  <p id="user-text"></p>
 
   <script>
-  let userText = document.getElementById('user-text');
 
-  document.onkeyup = function() {
+
+  document.onkeyup = function(event) {
     let input = event.key;
     input = input.toLowerCase();
     console.log(input);
 
     if (input === 'h') {
       car.honk();
+      rewriteStats();
     } else if (input === 'd') {
       car.driveToWork();
+      rewriteStats();
     } else if (input === 't') {
       car.getTuneUp();
+      rewriteStats();
     } else if (input === "w") {
       car.driveAroundWorld();
+      rewriteStats();
     }
   }
+
+  function rewriteStats() {
+    console.log('--------------------');
+    console.log("Make:" + car.make)
+    console.log("Model:" + car.model);
+    console.log("Color:" + car.color);
+    console.log("Mileage:" + car.mileage);
+    console.log("Is Working:" + car.isWorking);
+    console.log('----------------------');
+  };
   var car = {
   make: "Honda",
   model: "Fit",
