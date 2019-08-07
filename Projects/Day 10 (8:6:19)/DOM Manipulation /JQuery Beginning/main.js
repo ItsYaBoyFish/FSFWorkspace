@@ -1,3 +1,5 @@
+// -----------------------------------------------------------
+
 // Putting an h1 element of html inside the empty div. 
 // $('#empty-div').html('<h1>Hello World</h1>');
 
@@ -25,11 +27,26 @@ let ul = $('<ul>');
 // putting ul into the empyDiv
 emptyDiv.append(ul);
 
-for (var i = 0; i < drinkList.length; i++) {
-  // Creating the option tag
+// This is the For Loop version in JQuery
+$.each(drinkList, function(i, drink) {
   let option = $('<option>');
-  // adding the text to option, at index i
-  option.text(drinkList[i]);
-  // This takes the option and appends it to the ul. Making it visible.
+  option.text(drink);
   ul.append(option);
-}
+})
+
+// This is the original way to write a for loop
+
+// for (var i = 0; i < drinkList.length; i++) {
+//   // Creating the option tag
+//   let option = $('<option>');
+//   // adding the text to option, at index i
+//   option.text(drinkList[i]);
+//   // This takes the option and appends it to the ul. Making it visible.
+//   ul.append(option);
+// }
+
+// ------------------------------------------------------------
+
+let button = $('#button').on('click', function() {
+  console.log('You Clicked The Button');
+});
