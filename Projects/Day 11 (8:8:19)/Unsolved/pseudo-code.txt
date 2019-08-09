@@ -1,0 +1,23 @@
+Step 1: A 'Play Theme' button as well as a 'Pause Song'
+  - When clicked, the buttons should perform the respective actions
+
+  
+Step 2: Change Sizes 
+  - A 'Normal', 'Grow' and 'Shrink' option
+  - When clicked the image should perform the appropriate action.
+
+
+Step 3: Invisibility 
+  - An 'Invisible' and 'Visible' button
+  - When pushed, the Invisible makes it basically fully transparent. 
+  - When pushed, the Visible button makes it fully visible. 
+
+
+Step 4: Stretch
+  - This will stretch the image, with 2 buttons. (Stretch and Normal) 
+  - Each one should perform respectivly
+
+
+Step 5: Move Controls 
+  - Buttons: Up, Down, Left, Right
+  - When pushed the image should move in the respective directions.
