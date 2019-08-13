@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Starting Activity</title>
+</head>
+<body>
+  <script>
+  
+  var countVowels = function(str) {
+  var count = 0;
+  var word = str.toLowerCase();
+  console.log(word);
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (var i = 0; i < word.length; i++) {
+    if (vowels.indexOf(word[i]) > -1) {
+      count++
+    }
+  }
+  return count
+}
+  
+  </script>
+</body>
+</html>
