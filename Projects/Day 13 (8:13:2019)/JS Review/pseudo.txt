@@ -1,0 +1,14 @@
+HTML: 
+
+*** Link Bootstrap
+
+1. Create Jumbotron
+  - Heading 
+  - Button
+2. Container - This is to hold the lottery numbers after they have been generated.
+
+JavaScript:
+
+1. Create a button event. (meaning button clicked)
+2. Generate a number (This is a string in the example given.)
+  - h1 tag to display the number (Created Dynamically!)

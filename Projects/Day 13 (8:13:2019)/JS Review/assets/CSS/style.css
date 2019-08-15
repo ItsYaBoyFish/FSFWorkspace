@@ -1,0 +1,13 @@
+body {
+  font-family: 'Libre Caslon Text', serif;
+}
+
+.jumbotron-header {
+  font-size: 60px;
+}
+
+.click-button {
+  margin-top: 1em;
+  padding: 20px;
+  font-size: 35px;
+}
