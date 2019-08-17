@@ -21,7 +21,7 @@ var testArray = [1,3,5];
 var nextNumber = 0;
 testArray.map(function () {
 
-}
+});
 
 var unsortedArr = [
   1, 326, 251, 24, 284, 364, 287, 74, 89,
