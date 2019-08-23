@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Movie Search</h1>
+
+    <!-- Movies will get dumped here -->
+    <div id="buttons-view"></div>
+
+    <form id="movie-form">
+      <label for="movie-input">Add a Movie, Yo!</label>
+      <input type="text" id="movie-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-movie" type="submit" value="Add a Movie, Yo!">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // Initial array of movies
+      var movies = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+      var buttons;
+      // Function for displaying movie data
+      function renderButtons() {
+        // Clear the div holding the buttons so it doesnt duplicate.
+        $('#buttons-view').empty();
+        // YOUR CODE GOES HERE
+        for (let i = 0; i < movies.length; i++) {
+          buttons = $(`<button>`);
+          buttons.attr('value', `${movies[i]}`);
+          buttons.text(movies[i]);
+          $('#buttons-view').append(buttons);
+
+        }
+      }
+      // This function handles events where one button is clicked
+      $("#add-movie").on("click", function() {
+        // This prevents the 'Submit' action from resetting the page.
+        event.preventDefault();
+        // setting the value to the variable inputValue
+        var inputValue = $('#movie-input').val();
+        // Adding the inputValue to the movies array.
+        movies.push(inputValue);
+        // Calling this function to reload the buttons on the page. 
+        renderButtons();
+      });
+
+      // Calling the renderButtons function to display the initial list of movies
+      renderButtons();
+    </script>
+  </div>
+</body>
+
+</html>
