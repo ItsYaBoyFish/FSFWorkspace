@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Cat Button</title>
+</head>
+
+<body>
+  <button id="cat-button">magical cat button</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // This is the link to the button, and performs the actions inside the function callback. 
+    $("#cat-button").on("click", function() {
+
+      // This is the URL used by the api to fetch the data
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=cats";
+
+      // This is the ajax call. It is the bridge between the api and your application
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+        // This is the promise for the ajax call, this is what happens after the promise has finished. 
+        .then(function(response) {
+
+          // This is grabbing the image url from the response and assigning it to a new variable called imageUrl. 
+          var imageUrl = response.data.image_original_url;
+
+          // You are creating a new image tag, set to the variable catImage.
+          var catImage = $("<img>");
+
+          // Here you are adding a src and alt attribute with the imageUrl as the source.
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "cat image");
+
+          // Here you are putting that catImage variable at the top to be displayed by prepending it to the images id. 
+          $("#images").prepend(catImage);
+        });
+    });
+  </script>
+</body>
+
+</html>
