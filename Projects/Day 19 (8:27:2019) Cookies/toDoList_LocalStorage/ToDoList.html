@@ -37,12 +37,12 @@
     <script type="text/javascript">
 
     // Create an initial toDoCount variable
-    var toDoCount = 0;
+    var toDoCount = 1;
 
     //  On Click event associated with the add-to-do function
     $("#add-to-do").on("click", function(event) {
       event.preventDefault();
-
+      
       // Get the to-do "value" from the textbox and store it a variable
       var toDoTask = $("#to-do").val().trim();
 
@@ -75,9 +75,11 @@
       $("#to-do").val("");
 
       // Add to the toDoCount
-      toDoCount++;
+      
+      console.log(`Current ToDoCount Value: ${toDoCount}`);
 
       localStorage.setItem(`item-${toDoCount}`, toDoTask);
+      toDoCount++;
     });
 
     // When a user clicks a check box then delete the specific content
@@ -87,9 +89,10 @@
 
       // Get the number of the button from its data attribute and hold in a variable called  toDoNumber.
       var toDoNumber = $(this).attr("data-to-do");
-
+      // console.log(toDoNumber);
       // Select and Remove the specific <p> element that previously held the to do item number.
       $("#item-" + toDoNumber).remove();
+      localStorage.removeItem(`item-${toDoNumber}`);
     });
 
 
@@ -101,11 +104,11 @@
       toDoItem.text(example);
 
       var toDoClose = $("<button>");
-        toDoClose.attr("data-to-do", i);
-        toDoClose.addClass("checkbox");
-        toDoClose.text("✓");
-        toDoItem = toDoItem.prepend(toDoClose);
-        $("#to-dos").append(toDoItem);
+      toDoClose.attr("data-to-do", i);
+      toDoClose.addClass("checkbox");
+      toDoClose.text("✓");
+      toDoItem = toDoItem.prepend(toDoClose);
+      $("#to-dos").append(toDoItem);
     }
     </script>
 
