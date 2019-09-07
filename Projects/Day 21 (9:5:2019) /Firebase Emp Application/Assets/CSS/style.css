@@ -1,0 +1,29 @@
+body {
+  background-color: lightgrey;
+}
+
+.table {
+  font-size: 14px;
+  margin-top: 5em;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 5em;
+  width: 50%;
+  text-align: center;
+}
+
+.form {
+  margin-top: 5em;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clear {
+  float: right;
+}
